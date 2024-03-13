@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import SearchBar from './components/SearchBar'
+import searchImages from './services/api'
 
 function App() {
+
+  const handleSubmit = (term)=>{
+    console.log(term)
+    searchImages(term)
+  }
+
   return (
     <>
-      
+      <SearchBar onSubmit = {handleSubmit}/>
     </>
   )
+
 }
 
 export default App
