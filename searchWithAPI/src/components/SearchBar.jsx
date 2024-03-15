@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 
-function SearchBar( { onSubmit } ) {
+function SearchBar( { onSubmit, 
+  //term, 
+  //setTerm 
+} ) {
 
-  //make state for value of input & parameter onSubmit
   const [term,setTerm] = useState('')
-
   //handling the submit form triggered
   const handleFormSubmit = (event) => {
     event.preventDefault();
