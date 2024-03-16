@@ -23,9 +23,10 @@ function SearchBar( { onSubmit,
   return (
     <>
     <div className='m-5'>
-      <form onSubmit={handleFormSubmit}>
-        <p>{term}</p>
-        <input value={term} type="text" className='border border-black' onChange={handleChange}/>
+      <form onSubmit={handleFormSubmit} className='flex flex-row items-center justify-between gap-3 border rounded-md border-blue-600'>
+        {/* <p>{term}</p> */}
+        <label htmlFor='search' className='px-5'>search</label>
+        <input id='search' value={term} type="text" className='border-l border-l-blue-600 p-3 w-full' onChange={handleChange}/>
       </form>
     </div>
     </>

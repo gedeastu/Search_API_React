@@ -15,8 +15,9 @@ function ImageList({
     <div className='m-5'>
       Images List : {images.length}
     </div>
-    <div className='grid grid-cols-3'>
-      {images != renderImages ? (renderImages) : <p className='text-black text-2xl'>No result</p>}
+    <div className='columns-3 gap-y-5'>
+      {/* {images != renderImages ? (renderImages) : <p className='text-black text-2xl'>No result</p>} */}
+      {renderImages}
     </div>
     </>
   )
